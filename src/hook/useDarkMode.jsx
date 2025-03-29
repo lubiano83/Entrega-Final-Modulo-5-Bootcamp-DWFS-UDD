@@ -1,7 +1,7 @@
-"use client";
 import { useEffect, useState } from "react";
 
 const useDarkMode = () => {
+  
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {

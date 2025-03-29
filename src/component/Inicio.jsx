@@ -2,14 +2,14 @@ import React from 'react';
 import TiempoViews from '../views/TiempoViews';
 import Navbar from "../component/navbar/Navbar";
 import Footer from "../component/footer/Footer";
-import Menu from './menu/menu';
+import Selector from "../component/selector/Selector";
 
 const Inicio = () => {
 
   return (
     <div className='min-h-screen grid grid-rows-[auto_auto_1fr_auto]'>
       <Navbar />
-      <Menu />
+      <Selector />
       <TiempoViews />
       <Footer />
     </div>

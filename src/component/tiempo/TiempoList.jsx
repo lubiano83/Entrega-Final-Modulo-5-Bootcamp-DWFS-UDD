@@ -8,7 +8,7 @@ const TiempoList = () => {
   const { isDarkMode } = useDarkMode();
 
   return (
-    <div className="h-full bg-blue-50 flex flex-col justify-center items-center">
+    <div className="h-full bg-blue-50 flex flex-col justify-center items-center p-8">
       {weather && day && (
         <div className="bg-white rounded-2xl shadow-lg p-6 mt-8 w-full max-w-md text-gray-800">
           <h2 className="text-2xl font-bold mb-4 text-center">

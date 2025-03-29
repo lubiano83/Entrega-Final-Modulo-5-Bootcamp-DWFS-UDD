@@ -15,11 +15,8 @@ const TiempoList = () => {
             Clima en <span className={`${ isDarkMode ? "text-amber-600" : "text-blue-600" }`}>{ubicacion}</span>
           </h2>
 
-          <div className="flex items-center justify-center mb-4">
-            <img
-              src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`}
-              alt={weather.weather[0].description}
-            />
+          <div className="flex items-center justify-center mb-4 w-full aspect-auto">
+            <img src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`} alt={weather.weather[0].description} />
           </div>
 
           <ul className="space-y-2 text-base">

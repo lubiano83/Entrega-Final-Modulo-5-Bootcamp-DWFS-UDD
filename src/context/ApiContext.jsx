@@ -14,6 +14,7 @@ export const ApiProvider = ({ children }) => {
   const [weather, setWeather] = useState(null);
   const [ day, setDay ] = useState(null);
   const [ubicacion, setUbicacion] = useState(null);
+  const apiKey = import.meta.env.VITE_API_KEY;
 
   useEffect(() => {
     handleClick(lugares[0]);
@@ -46,7 +47,7 @@ export const ApiProvider = ({ children }) => {
 
   const OpenWeatherMap = async (lat, lon) => {
     try {
-      const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.API_KEY}&units=metric&lang=es`);
+      const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&lang=es`);
       const data = await res.json();
       return data;
     } catch (error) {

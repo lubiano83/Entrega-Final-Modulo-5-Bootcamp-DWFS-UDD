@@ -46,7 +46,7 @@ export const ApiProvider = ({ children }) => {
 
   const OpenWeatherMap = async (lat, lon) => {
     try {
-      const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=fd0052fbc261661f9fcc245b041cc305&units=metric&lang=es`);
+      const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.API_KEY}&units=metric&lang=es`);
       const data = await res.json();
       return data;
     } catch (error) {

@@ -7,7 +7,7 @@ const Navbar = () => {
   const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   return (
-    <div className={`flex justify-evenly items-center p-2  gap-4 ${isDarkMode ? "bg-blue-500" : "bg-green-500"}`}>
+    <div className={`flex justify-evenly items-center p-2  gap-4 ${isDarkMode ? "bg-amber-500" : "bg-green-500"}`}>
       <Logo />
       <img src="/sun-svgrepo-com.svg" alt="modo light" width={30} height={30} onClick={toggleDarkMode}/>
     </div>

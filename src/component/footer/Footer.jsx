@@ -7,7 +7,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <div className={`flex justify-center items-center p-2 text-white ${isDarkMode ? "bg-blue-500" : "bg-green-500" }`}>
+    <div className={`flex justify-center items-center p-2 text-white ${isDarkMode ? "bg-amber-500" : "bg-green-500" }`}>
       © {year} Todos los derechos reservados
     </div>
   )

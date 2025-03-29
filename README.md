@@ -1,13 +1,46 @@
-# React + Vite
+# 🌤️ My Weather Spots
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web para consultar el clima actual y datos astronómicos (amanecer y atardecer) en tus lugares favoritos.  
+Desarrollado con **React**, **Vite**, y consumo de datos desde **OpenWeatherMap** y **Sunrise-Sunset API**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Características
 
-## Expanding the ESLint configuration
+- Consulta del clima actual por coordenadas (lugares predefinidos).
+- Muestra:
+  - Temperatura en °C
+  - Descripción del clima (en español)
+  - Icono del estado del clima
+  - Humedad
+  - Velocidad y dirección del viento (en español)
+  - Hora de amanecer y atardecer
+- Interfaz visual mejorada con Tailwind CSS
+- Componentización con Context API + Custom Hooks
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Entrega-Final-Modulo-5-Bootcamp-DWFS-UDD
+---
+
+## 🧩 Tecnologías usadas
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [OpenWeatherMap API](https://openweathermap.org/current)
+- [Sunrise-Sunset API](https://sunrise-sunset.org/api)
+
+---
+
+## 📦 Instalación
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/tu-usuario/my-weather-spots.git
+
+# Entrar al proyecto
+cd my-weather-spots
+
+# Instalar dependencias
+npm install
+
+# Iniciar en desarrollo
+npm run dev

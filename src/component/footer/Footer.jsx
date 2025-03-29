@@ -1,12 +1,13 @@
 import React from 'react';
-import Logo from '../Logo';
+import useDarkMode from "../../hook/useDarkMode";
 
 const Footer = () => {
 
+  const { isDarkMode } = useDarkMode();
   const year = new Date().getFullYear();
 
   return (
-    <div className='flex justify-center items-center p-2 bg-blue-500 text-white'>
+    <div className={`flex justify-center items-center p-2 text-white ${isDarkMode ? "bg-blue-500" : "bg-green-500" }`}>
       © {year} Todos los derechos reservados
     </div>
   )

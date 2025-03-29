@@ -7,8 +7,11 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <div className={`flex justify-center items-center p-2 text-white ${isDarkMode ? "bg-amber-500" : "bg-blue-500" }`}>
+    <div className={`flex justify-evenly items-center gap-4 p-2 text-white ${isDarkMode ? "bg-amber-500" : "bg-blue-500" }`}>
       © {year} Todos los derechos reservados
+      <a href="mailto:lubiano83@gmail.com" class="hover:text-gray-700">
+        <h3>lubiano83@gmail.com</h3>
+      </a>
     </div>
   )
 }

@@ -12,7 +12,7 @@ const TiempoList = () => {
       {weather && day && (
         <div className="bg-white rounded-2xl shadow-lg p-6 mt-8 w-full max-w-md text-gray-800">
           <h2 className="text-2xl font-bold mb-4 text-center">
-            Clima en <span className={`${ isDarkMode ? "text-amber-600" : "text-green-600" }`}>{ubicacion}</span>
+            Clima en <span className={`${ isDarkMode ? "text-amber-600" : "text-blue-600" }`}>{ubicacion}</span>
           </h2>
 
           <div className="flex items-center justify-center mb-4">

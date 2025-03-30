@@ -11,9 +11,9 @@ const lugares = [
 
 export const ApiProvider = ({ children }) => {
 
-  const [weather, setWeather] = useState(null);
+  const [ weather, setWeather ] = useState(null);
   const [ day, setDay ] = useState(null);
-  const [ubicacion, setUbicacion] = useState(null);
+  const [ ubicacion, setUbicacion ] = useState(null);
   const apiKey = import.meta.env.VITE_API_KEY;
 
   useEffect(() => {

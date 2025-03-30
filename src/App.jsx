@@ -9,6 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={ <Inicio /> } />
+          <Route path="*" element={ <main><h1>¡404 Error, Not Found!</h1></main> } />
         </Routes>
       </BrowserRouter>
     </ApiProvider>

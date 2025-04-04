@@ -3,10 +3,10 @@ import { createContext, useEffect, useState } from "react";
 const ApiContext = createContext(null);
 
 const lugares = [
-  { nombre: "Las Trancas", lat: -36.902555, lon: -71.546161 },
-  { nombre: "Rapel", lat: -34.135694, lon: -71.453917 },
-  { nombre: "Matanzas", lat: -33.938611, lon: -71.847166 },
-  { nombre: "Olmué", lat: -32.999888, lon: -71.195583 },
+  { nombre: "Las Trancas", lat: -36.902431, lon: -71.546204 },
+  { nombre: "Rapel", lat: -34.13570, lon: -71.45390 },
+  { nombre: "Matanzas", lat: -33.938597, lon: -71.847187 },
+  { nombre: "Olmué", lat: -32.999965, lon: -71.195589 },
 ];
 
 export const ApiProvider = ({ children }) => {

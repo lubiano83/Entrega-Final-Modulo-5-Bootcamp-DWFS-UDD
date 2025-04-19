@@ -9,7 +9,7 @@ import Message from "./component/Message";
 
 function App() {
 
-  const { isDarkMode } = useDarkMode();
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
   const year = new Date().getFullYear();
   const email = "lubiano83@gmail.com";
   const derechos = `© ${year} Todos los derechos reservados`;
@@ -19,13 +19,13 @@ function App() {
     <ApiProvider>
         <BrowserRouter>
           <div className={`min-h-screen grid grid-rows-[auto_1fr_auto] ${isDarkMode ? "bg-amber-50" : "bg-green-50"}`}>
-            <Navbar linkedin={linkedin} />
+            <Navbar linkedin={linkedin} isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
             <Routes>
               <Route path="/" element={ <AboutViews isDarkMode={isDarkMode} /> } />
               <Route path="/weather" element={ <TiempoViews isDarkMode={isDarkMode} /> } />
               <Route path="*" element={ <Message isDarkMode={isDarkMode} >¡Not Found: Error 404!</Message> } />
             </Routes>
-            <Footer email={email} derechos={derechos} />
+            <Footer email={email} derechos={derechos} isDarkMode={isDarkMode} />
           </div>
         </BrowserRouter>
     </ApiProvider>

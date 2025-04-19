@@ -1,5 +1,5 @@
 import React from 'react';
-import About from '../component/about/about';
+import About from '../component/about/About';
 
 const AboutViews = ({ isDarkMode }) => {
   return (

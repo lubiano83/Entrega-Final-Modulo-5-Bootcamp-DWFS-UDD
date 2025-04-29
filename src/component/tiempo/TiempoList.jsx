@@ -22,11 +22,10 @@ const TiempoList = ({ isDarkMode }) => {
             </div>
   
             <ul className="space-y-2 text-base">
-              <li>🌡️ <strong>Temperatura:</strong> {weather.main.temp} °C</li>
               <li>📌 <strong>Descripción:</strong> {weather.weather[0].description}</li>
+              <li>🌡️ <strong>Temperatura:</strong> {weather.main.temp} °C</li>
               <li>💧 <strong>Humedad:</strong> {weather.main.humidity}%</li>
-              <li>💨 <strong>Viento:</strong> {(weather.wind.speed * 3.6).toFixed(1)} km/h</li>
-              <li>🧭 <strong>Dirección:</strong> {getDireccionViento(weather.wind.deg)}</li>
+              <li>💨 <strong>Viento:</strong> {(weather.wind.speed * 3.6).toFixed(1)} km/h, {getDireccionViento(weather.wind.deg)}</li>
               <li>🌅 <strong>Amanecer:</strong> {new Date(day.results.sunrise).toLocaleTimeString()}</li>
               <li>🌇 <strong>Atardecer:</strong> {new Date(day.results.sunset).toLocaleTimeString()}</li>
             </ul>

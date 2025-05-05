@@ -5,7 +5,7 @@ import TiempoViews from "./views/TiempoViews";
 import Navbar from "./component/navbar/Navbar";
 import Footer from "./component/footer/Footer";
 import useDarkMode from "./hook/useDarkMode";
-import Message from "./component/Message";
+import NotFoundPage from "./views/NotFounPage";
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
             <Routes>
               <Route path="/" element={ <AboutViews isDarkMode={isDarkMode} /> } />
               <Route path="/weather" element={ <TiempoViews isDarkMode={isDarkMode} /> } />
-              <Route path="*" element={ <Message isDarkMode={isDarkMode} >¡Not Found: Error 404!</Message> } />
+              <Route path="*" element={ <NotFoundPage /> } />
             </Routes>
             <Footer email={email} derechos={derechos} isDarkMode={isDarkMode} />
           </div>

@@ -9,4 +9,4 @@ const Message = ({ children, isDarkMode }) => {
   )
 }
 
-export default Message
+export default Message;

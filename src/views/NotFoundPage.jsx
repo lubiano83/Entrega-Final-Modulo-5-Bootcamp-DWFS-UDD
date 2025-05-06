@@ -1,9 +1,9 @@
 import NotFound from "../component/NotFound";
 
-export default function NotFoundPage() {
+export default function NotFoundPage({ isDarkMode }) {
     return (
         <div className="flex justify-center items-center h-full w-full">
-            <NotFound />
+            <NotFound isDarkMode={isDarkMode} />
         </div>
     )
 };

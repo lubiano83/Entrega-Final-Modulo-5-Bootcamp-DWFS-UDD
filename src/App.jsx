@@ -24,7 +24,7 @@ function App() {
             <Routes>
               <Route path="/" element={ <AboutViews isDarkMode={isDarkMode} /> } />
               <Route path="/weather" element={ <TiempoViews isDarkMode={isDarkMode} /> } />
-              <Route path="*" element={ <NotFoundPage /> } />
+              <Route path="*" element={ <NotFoundPage isDarkMode={isDarkMode} /> } />
             </Routes>
           <Footer email={email} derechos={derechos} isDarkMode={isDarkMode} />
         </div>

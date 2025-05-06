@@ -1,13 +1,13 @@
 import React from "react";
 import useApi from "../../hook/useApi.hook";
-import Message from "../Message";
 import ErrorMessage from "../ErrorMessage";
+import Message from "../Message";
 
 const TiempoList = ({ isDarkMode }) => {
 
   const { getDireccionViento, weather, ubicacion, day } = useApi();
 
-  if(!weather || !day) {
+  if(!weather || !day || !ubicacion) {
     return (
       <div className="flex justify-center items-center h-full w-full">
         <Message isDarkMode={isDarkMode}>Loading...</Message>
@@ -17,13 +17,13 @@ const TiempoList = ({ isDarkMode }) => {
 
   try {
     return (
-      <div className={`h-full ${isDarkMode ? "bg-amber-50": "bg-green-50"} flex flex-col justify-center items-center p-8`}>
+      <div className={`h-full ${isDarkMode ? "bg-amber-50": "bg-green-50"} flex flex-col justify-center items-center pb-8`}>
         <div className="bg-white rounded-2xl shadow-lg p-6 mt-8 w-full max-w-md text-gray-700">
           <h2 className="text-2xl font-bold mb-4 text-center">
             Clima en <span className={`${ isDarkMode ? "text-amber-700" : "text-green-700" }`}>{ubicacion}</span>
           </h2>
 
-          <div className="flex items-center justify-center mb-4 w-full aspect-auto">
+          <div className="flex items-center justify-center mb-4 w-full aspect-video">
             <img src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`} alt={weather.weather[0].description} />
           </div>
 
@@ -39,7 +39,10 @@ const TiempoList = ({ isDarkMode }) => {
       </div>
     );
   } catch (error) {
-    <ErrorMessage isDarkMode={isDarkMode} error={error} />
+    const path = import.meta.url;
+    return (
+      <ErrorMessage isDarkMode={isDarkMode} path={path} error={error} />
+    )
   }
 };
 

@@ -6,6 +6,7 @@ import Navbar from "./component/navbar/Navbar";
 import Footer from "./component/footer/Footer";
 import useDarkMode from "./hook/useDarkMode";
 import NotFoundPage from "./views/NotFoundPage";
+import { ErrorBoundary } from "./component/ErrorBoundary";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
   const linkedin = "https://www.linkedin.com/in/jos%C3%A9-pablo-lubiano-08559b9a/";
 
   return (
+    <ErrorBoundary>
       <ApiProvider>
         <div className={`min-h-screen grid grid-rows-[auto_1fr_auto] ${isDarkMode ? "bg-amber-50" : "bg-green-50"}`}>
           <Navbar linkedin={linkedin} isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
@@ -27,6 +29,7 @@ function App() {
           <Footer email={email} derechos={derechos} isDarkMode={isDarkMode} />
         </div>
       </ApiProvider>
+    </ErrorBoundary>
   )
 }
 

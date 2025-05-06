@@ -1,6 +1,6 @@
 import React from "react";
 import useApi from "../../hook/useApi.hook";
-import ErrorMessage from "../ErrorMessage";
+// import ErrorMessage from "../ErrorMessage";
 import Message from "../Message";
 
 const TiempoList = ({ isDarkMode }) => {
@@ -15,7 +15,7 @@ const TiempoList = ({ isDarkMode }) => {
     )
   };
 
-  try {
+  // try {
     return (
       <div className={`h-full ${isDarkMode ? "bg-amber-50": "bg-green-50"} flex flex-col justify-center items-center pb-8`}>
         <div className="bg-white rounded-2xl shadow-lg p-6 mt-8 w-full max-w-md text-gray-700">
@@ -38,12 +38,12 @@ const TiempoList = ({ isDarkMode }) => {
         </div>
       </div>
     );
-  } catch (error) {
-    const path = import.meta.url;
-    return (
-      <ErrorMessage isDarkMode={isDarkMode} path={path} error={error} />
-    )
-  }
+  // } catch (error) {
+  //   const path = import.meta.url;
+  //   return (
+  //     <ErrorMessage isDarkMode={isDarkMode} path={path} error={error} />
+  //   )
+  // }
 };
 
 export default TiempoList;

@@ -32,7 +32,6 @@ Desarrollado con **React**, **Vite**, y consumo de datos desde **OpenWeatherMap*
 
 ## 📦 Instalación
 
-```bash
 # Clonar el repositorio
 git clone https://github.com/tu-usuario/my-weather-spots.git
 
@@ -44,3 +43,7 @@ npm install
 
 # Iniciar en desarrollo
 npm run dev
+
+## Pagina: 
+
+- https://my-weather-spots.netlify.app/

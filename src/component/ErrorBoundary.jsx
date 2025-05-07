@@ -1,4 +1,6 @@
 import { Component } from "react";
+import ErrorMessage from "./ErrorMessage";
+
 export class ErrorBoundary extends Component {
     constructor(props) {
         super(props);
@@ -12,7 +14,9 @@ export class ErrorBoundary extends Component {
     }
     render() {
         if (this.state.hasError) {
-            return <h2>Algo salio mal!</h2>
+            return (
+                <ErrorMessage isDarkMode={this.props.isDarkMode} />
+            )
         }
         return this.props.children;
     }

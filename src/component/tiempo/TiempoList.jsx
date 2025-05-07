@@ -15,7 +15,7 @@ const TiempoList = ({ isDarkMode }) => {
   };
 
   return (
-    <div className={`h-full ${isDarkMod ? "bg-amber-50": "bg-green-50"} flex flex-col justify-center items-center pb-8`}>
+    <div className={`h-full ${isDarkMode ? "bg-amber-50": "bg-green-50"} flex flex-col justify-center items-center pb-8`}>
       <div className="bg-white rounded-2xl shadow-lg p-6 mt-8 w-full max-w-md text-gray-700">
         <h2 className="text-2xl font-bold mb-4 text-center">
           Clima en <span className={`${ isDarkMode ? "text-amber-700" : "text-green-700" }`}>{ubicacion}</span>

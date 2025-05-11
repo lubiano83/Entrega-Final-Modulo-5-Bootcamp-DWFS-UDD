@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../Logo';
 
-const Footer = ({ email, derechos, isDarkMode }) => {
+export default function Footer({ email, derechos, isDarkMode }) {
 
   return (
     <div className={`flex justify-evenly items-center gap-4 px-8 py-4 flex-wrap-reverse text-center text-white ${isDarkMode ? "bg-amber-700" : "bg-green-700" }`}>
@@ -10,6 +10,4 @@ const Footer = ({ email, derechos, isDarkMode }) => {
       <Logo />
     </div>
   )
-}
-
-export default Footer;
+};

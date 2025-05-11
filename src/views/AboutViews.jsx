@@ -1,12 +1,10 @@
 import React from 'react';
 import About from '../component/about/About';
 
-const AboutViews = ({ isDarkMode }) => {
+export default function AboutViews({ isDarkMode }) {
   return (
     <div className='flex justify-center items-center'>
       <About isDarkMode={isDarkMode} />
     </div>
   )
 }
-
-export default AboutViews;

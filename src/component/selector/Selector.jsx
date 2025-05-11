@@ -1,7 +1,7 @@
 import React from 'react';
 import useApi from '../../hook/useApi.hook';
 
-const Selector = ({ isDarkMode }) => {
+export default function Selector({ isDarkMode }) {
 
     const { lugares, handleClick } = useApi();
 
@@ -12,6 +12,4 @@ const Selector = ({ isDarkMode }) => {
           ))}
       </div>
     )
-}
-
-export default Selector;
+};

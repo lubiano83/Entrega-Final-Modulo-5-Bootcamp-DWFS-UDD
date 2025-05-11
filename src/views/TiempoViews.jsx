@@ -2,7 +2,7 @@ import React from 'react';
 import TiempoList from '../component/tiempo/TiempoList';
 import Selector from '../component/selector/Selector';
 
-const TiempoViews = ({ isDarkMode }) => {
+export default function TiempoViews({ isDarkMode }) {
   return (
     <div>
       <Selector isDarkMode={isDarkMode} />
@@ -10,5 +10,3 @@ const TiempoViews = ({ isDarkMode }) => {
     </div>
   )
 }
-
-export default TiempoViews;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Message = ({ children, isDarkMode }) => {
+export default function Message({ children, isDarkMode }) {
 
   return (
     <div className={`${isDarkMode ? "text-amber-700" : "text-green-700"} font-bold flex justify-center items-center text-2xl`}>
@@ -8,5 +8,3 @@ const Message = ({ children, isDarkMode }) => {
     </div>
   )
 }
-
-export default Message;

@@ -2,7 +2,7 @@ import React from "react";
 import useApi from "../../hook/useApi.hook";
 import Message from "../Message";
 
-const TiempoList = ({ isDarkMode }) => {
+export default function TiempoList({ isDarkMode }) {
 
   const { getDireccionViento, weather, ubicacion, day } = useApi();
 
@@ -37,5 +37,3 @@ const TiempoList = ({ isDarkMode }) => {
     </div>
   );
 };
-
-export default TiempoList;

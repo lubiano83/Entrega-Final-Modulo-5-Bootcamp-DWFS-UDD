@@ -1,12 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Logo = () => {
+export default function Logo() {
   return (
     <Link to={"/"}>
-      <div className='text-lg font-bold text-white hover:text-gray-700 italic'>myWeatherSpots</div>
+      <h1 className='text-lg font-bold text-white hover:text-gray-700 italic'>myWeatherSpots</h1>
     </Link>
   )
 }
-
-export default Logo;
